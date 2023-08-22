@@ -70,23 +70,5 @@ int _printf(const char *format, ...)
 	print_buff(Buffer, &buff_index);
 	counter += buff_index;
 	va_end(ptr); 
-	return counter; 
+	return counter;
 }
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
-	*buff_index = 0;
-}
-
-
