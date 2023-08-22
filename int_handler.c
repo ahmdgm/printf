@@ -30,5 +30,5 @@ int print_int(int val)
 		_putchar(buffer[j]);
 	}
 
-	return printed;
+	return (printed);
 }
