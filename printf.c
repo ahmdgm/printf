@@ -2,7 +2,7 @@
 
 /*
 * _printf - function to print on the console
-* @format: is a pointer to const int 
+* @format: is a pointer to const char 
 * Return: int
 */
 int _printf(const char *format, ...)
