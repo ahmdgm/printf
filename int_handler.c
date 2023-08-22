@@ -19,8 +19,7 @@ int print_int(int val)
 		val = -val;
 	}
 
-	do
-	{
+	do{
 		buffer[i++] = '0' + (val % 10);
 		val /= 10;
 		printed++;
@@ -30,5 +29,5 @@ int print_int(int val)
 		_putchar(buffer[j]);
 	}
 
-	return printed;
+	return (printed);
 }
