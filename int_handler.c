@@ -3,7 +3,7 @@
 /*
 * print_int - function to print int numbers
 * @value: value passed to print it
-* Return: int 
+* Return: int
 */
 int print_int(int val)
 {
