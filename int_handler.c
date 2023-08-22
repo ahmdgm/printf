@@ -8,8 +8,9 @@
 int print_int(int val)
 {
 	char buffer[32]; 
-	int printed = 0; 
-    int i = 0;
+	int printed = 0;
+	int j;
+	int i = 0;
 
 	if (val < 0)
 	{
@@ -24,7 +25,7 @@ int print_int(int val)
 		val /= 10;
 		printed++;
 	} while (val > 0);
-	for (int j = i - 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(buffer[j]);
 	}
