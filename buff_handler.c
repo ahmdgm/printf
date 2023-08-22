@@ -20,9 +20,10 @@ int _putchar(char c)
 */
 void print_buff(char buffer[], int *buff_index)
 {
+	int i;
 	if (*buff_index > 0)
 	{
-		for (int i = 0; i < *buff_index; i++)
+		for (i = 0; i < *buff_index; i++)
 		{
 			_putchar(buffer[i]);
 		}
