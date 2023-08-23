@@ -59,6 +59,32 @@ int _printf(const char *format, ...)
 				Printed = print_int(value);
 				counter += Printed;
 			}
+			else if (*format == 'b')
+			{
+				print_buffer(buffer,&buff_ind);
+				int value = va_arg(args, int);
+				int j;
+
+				if (value == 0)
+				{
+					putchar('0');
+					continue;
+				}
+				unsigned int binary[32];
+				unsigned int i = 0;
+    
+				while (value > 0)
+				{
+					binary[i] = value % 2;
+					value /= 2;
+					i++;
+				}
+    
+			for (j = i - 1; j >= 0; j--)
+			{
+				putchar('0' + binary[j]);
+			}
+		}
 		} else
 		{
 			Buffer[buff_index++] = format[i];
