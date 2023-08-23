@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -33,4 +32,3 @@ int print_int(int value);
 void print_buff(char buffer[], int *buff_ind);
 
 #endif
->>>>>>> d33e5c4f829eab409346e2fb95661d26a71ca1b0
