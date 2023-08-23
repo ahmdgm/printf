@@ -1,13 +1,13 @@
 #include "main.h"
 
-/*
+/**
 * print_int - function to print int numbers
-* @value: value passed to print it
+* @val: value passed to print it
 * Return: int
 */
 int print_int(int val)
 {
-	char buffer[32]; 
+	char buffer[32];
 	int printed = 0;
 	int j;
 	int i = 0;
@@ -19,7 +19,7 @@ int print_int(int val)
 		val = -val;
 	}
 
-	do{
+	do {
 		buffer[i++] = '0' + (val % 10);
 		val /= 10;
 		printed++;

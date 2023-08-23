@@ -16,11 +16,12 @@ int _putchar(char c)
 /**
 * print_buff - function to print buffer
 * @buffer: array of characters passed
-* @buff_ind: is a pointer to an integer
+* @buff_index: is a pointer to an integer
 */
 void print_buff(char buffer[], int *buff_index)
 {
 	int i;
+
 	if (*buff_index > 0)
 	{
 		for (i = 0; i < *buff_index; i++)
@@ -31,4 +32,3 @@ void print_buff(char buffer[], int *buff_index)
 
 	*buff_index = 0;
 }
-
