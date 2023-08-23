@@ -59,7 +59,7 @@ int _printf(const char *format, ...)
 				Printed = print_int(value);
 				counter += Printed;
 			}
-			else if (*format == 'b')
+			else if (format[i] == 'b')
 			{
 				print_buffer(buffer,&buff_ind);
 				int value = va_arg(args, int);
@@ -67,7 +67,7 @@ int _printf(const char *format, ...)
 
 				if (value == 0)
 				{
-					putchar('0');
+					_putchar('0');
 					continue;
 				}
 				unsigned int binary[32];
@@ -82,7 +82,7 @@ int _printf(const char *format, ...)
     
 			for (j = i - 1; j >= 0; j--)
 			{
-				putchar('0' + binary[j]);
+				_putchar('0' + binary[j]);
 			}
 		}
 		} else
