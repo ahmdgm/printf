@@ -6,8 +6,6 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-#define NULL_STRING "(nil)"
-#define INT_MAX 2147483647
 #define BUFF_SIZE 1024
 
 int _putchar(char c);
