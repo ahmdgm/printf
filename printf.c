@@ -62,8 +62,8 @@ int _printf(const char *format, ...)
 
 			else if (format[i] == 'b')
 			{
-				print_buffer(buffer,&buff_ind);
-				int value = va_arg(args, int);
+				print_buffer(Buffer,&buff_index);
+				int value = va_arg(ptr, int);
 				int j;
 
 				if (value == 0)
